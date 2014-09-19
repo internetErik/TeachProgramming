@@ -28,37 +28,273 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="teaching-programming" class="anchor" href="#teaching-programming"><span class="octicon octicon-link"></span></a>Teaching Programming</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Using Javascript as an Example</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p><strong>This is not for students to work with directly, but for those interested in instruction.</strong></p>
+
+<h1>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>Learning to code is hard and it shouldn’t be.  <em>I agree with Bret Victor that this is in great part due to programming languages being poorly designed.  Ease of learning should be a core design consideration in creation of programming languages, and programmer should stop finding it acceptable for things to be otherwise. (Read more about this here: <a href="http://worrydream.com/LearnableProgramming/">http://worrydream.com/LearnableProgramming/</a> )</em></p>
+
+<p>Unfortunately, I can’t develop a new programming language, but I do have an interest immediately in helping those who are interested in programming learn.  </p>
+
+<p>I belive in a direct person-to-person involvement in education; I don’t think we should be indifferent to people’s failures in learning, since a failure in these matters often makes it harder to make another attempt.  We should not leave those who want to learn stranded.</p>
+
+<p>The following stages are intended to be repeated multiple times, and require the guidance of someone who is already familiar with the technology you are trying to learn.  Therefore, this document is for those who want to teach as much (if not more) than those who want to learn.  Both teacher and student should be familiar with this document so that all parties understand the process involved.</p>
+
+<h1>
+<a name="environment-setup" class="anchor" href="#environment-setup"><span class="octicon octicon-link"></span></a>Environment Setup</h1>
+
+<p>This sucks.  Fortunately it isn’t so hard with Javascript, since you already have a browser.</p>
+
+<h1>
+<a name="analysis-of-technology" class="anchor" href="#analysis-of-technology"><span class="octicon octicon-link"></span></a>Analysis of Technology</h1>
+
+<p>This will require some homework for the teacher.  The idea is to evaluate the technologies you will be teaching so you can fit the different components to the following sections.  </p>
+
+<p>I'm going to talk about this more in depth in the section titles Programming Ontology</p>
+
+<h1>
+<a name="analysis-of-the-student" class="anchor" href="#analysis-of-the-student"><span class="octicon octicon-link"></span></a>Analysis of the Student</h1>
+
+<p>Discover how much the student already know?</p>
+
+<h1>
+<a name="vocabulary-study" class="anchor" href="#vocabulary-study"><span class="octicon octicon-link"></span></a>Vocabulary Study</h1>
+
+<p>Suggest that the student learning vocabulary involved in the technologies they want to learn.  Reading articles, watching tutorials and looking at questions/answers (on stackoverflow), even with little comprehension can help provide a realistic view of ignorance on a subject, and help with encountering new terms.</p>
+
+<p><em>Programming Terminology Resources:</em></p>
+
+<ul>
+<li><p><a href="http://www.codecademy.com/glossary/javascript">http://www.codecademy.com/glossary/javascript</a></p></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary">https://developer.mozilla.org/en-US/docs/Glossary</a></p></li>
+</ul><h1>
+<a name="iterate-over-these-following-steps" class="anchor" href="#iterate-over-these-following-steps"><span class="octicon octicon-link"></span></a>Iterate Over These Following Steps:</h1>
+
+<ul>
+<li>
+<p>Try emphasizing a type on each iteration. </p>
+
+<ul>
+<li>
+<p>In early iterations start with simple types</p>
+
+<ul>
+<li><p>text, number, truth values</p></li>
+<li><p>It’s ok to do all three of these at once, but emphaze only one at a time</p></li>
+</ul>
+</li>
+<li>
+<p>After simple types work with aggreate types</p>
+
+<ul>
+<li>lists, generic</li>
+</ul>
+</li>
+<li>
+<p>After aggregate types work with program blocks</p>
+
+<ul>
+<li>functions</li>
+</ul>
+</li>
+<li><p>After all of these, try going through using combinations of these</p></li>
+<li>
+<p>After this, start adding more application layers, but one at a time.</p>
+
+<ul>
+<li>For each application layer you add, the entire process may have to be repeated, starting with basics of that layer.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Practice putting/getting values with that particular type.</p></li>
+<li><p>Practice manipulations on that type</p></li>
+<li>
+<p>Practice control flow with that type</p>
+
+<ul>
+<li>Understand truth values of a type</li>
+</ul>
+</li>
+<li><p>Go Over some Common tasks With a type</p></li>
+<li>
+<p>If you have covered basic types (text, number, truth value)</p>
+
+<ul>
+<li>Work with built in features</li>
+</ul>
+</li>
+</ul><h2>
+<a name="types-conceptually" class="anchor" href="#types-conceptually"><span class="octicon octicon-link"></span></a>Types (Conceptually)</h2>
+
+<p>Text (String, char)</p>
+
+<p>Number (int, float, double)</p>
+
+<p>Truth Value (Boolean)</p>
+
+<p>Algorithm (Function)</p>
+
+<p>Lists (Array)</p>
+
+<p>Generic (Object)</p>
+
+<h2>
+<a name="putting-and-getting-values" class="anchor" href="#putting-and-getting-values"><span class="octicon octicon-link"></span></a>Putting and Getting Values</h2>
+
+<p>A level/layer/part of a software system is defined by a programming interface for putting and getting values.  </p>
+
+<p>Here are some different levels of a system programmers might interact with</p>
+
+<ul>
+<li>
+<p>Memory: data we put in local variable are manipulating direcly in our program.  This is the most essential layer for programming.</p>
+
+<ul>
+<li>var x = 2; x = x * 2; console.log(x);</li>
+</ul>
+</li>
+<li>
+<p>Network (we can put and get values from the network)</p>
+
+<ul>
+<li><p>HTTP request (‘web’ request)</p></li>
+<li><p>TCP/UDP</p></li>
+</ul>
+</li>
+<li><p>File System</p></li>
+<li>
+<p>Other programs (via an api used in our program or through the network)</p>
+
+<ul>
+<li><p>Database (on current machine or through network)</p></li>
+<li><p>Browser (<em>e.g.</em>, Document Object Model, or DOM)</p></li>
+<li><p>Service on network (Facebook)</p></li>
+</ul>
+</li>
+<li><p>User (we can prompt user for input)</p></li>
+</ul><p><em>e.g.</em>:</p>
+
+<p>var x = 12;</p>
+
+<p>console.log(x);</p>
+
+<p>(function(x) {</p>
+
+<pre><code>console.log(x);
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>})(12);</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>var x = [1,2,3];</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>console.log(x[0]);</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h2>
+<a name="simple-data-manipulation" class="anchor" href="#simple-data-manipulation"><span class="octicon octicon-link"></span></a>Simple Data Manipulation</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>+, -, /, *, %  </p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>()</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>||, &amp;&amp; </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>++x, x++, +=</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<h2>
+<a name="control-of-program-flow" class="anchor" href="#control-of-program-flow"><span class="octicon octicon-link"></span></a>Control of Program Flow</h2>
+
+<p>if</p>
+
+<p>else </p>
+
+<p>for</p>
+
+<p>can probably avoid:</p>
+
+<p>while</p>
+
+<p>do...while</p>
+
+<p>switch</p>
+
+<h2>
+<a name="common-tasks" class="anchor" href="#common-tasks"><span class="octicon octicon-link"></span></a>Common Tasks</h2>
+
+<ul>
+<li><p>Find text in a string</p></li>
+<li><p>Evaluate a mathematical expression</p></li>
+<li><p>Traverse an array (in order to find something)</p></li>
+</ul><h2>
+<a name="extra-built-in-features-for-types--api-features" class="anchor" href="#extra-built-in-features-for-types--api-features"><span class="octicon octicon-link"></span></a>Extra: Built In Features For Types / API Features</h2>
+
+<p><em>e.g.</em>, array.prototype functions</p>
+
+<h2>
+<a name="extra-extra-patterns-for-common-tasks" class="anchor" href="#extra-extra-patterns-for-common-tasks"><span class="octicon octicon-link"></span></a>Extra Extra: Patterns for Common Tasks</h2>
+
+<p><em>e.g.</em>, Closure, module pattern</p>
+
+<h1>
+<a name="advanced" class="anchor" href="#advanced"><span class="octicon octicon-link"></span></a>Advanced</h1>
+
+<p>These topics don’t need to be covered until the student has relative autonomy.</p>
+
+<h2>
+<a name="software-design-principles" class="anchor" href="#software-design-principles"><span class="octicon octicon-link"></span></a>Software Design Principles</h2>
+
+<p>SOLID</p>
+
+<table>
+<tr>
+<td>Initial</td>
+    <td>Stands for
+(acronym)</td>
+    <td>Concept</td>
+  </tr>
+<tr>
+<td>S</td>
+    <td>SRP [4]</td>
+    <td>Single responsibility principle
+a class should have only a single responsibility (i.e. only one potential change in the software's specification should be able to affect the specification of the class)</td>
+  </tr>
+<tr>
+<td>O</td>
+    <td>OCP [5]</td>
+    <td>Open/closed principle
+"software entities … should be open for extension, but closed for modification."</td>
+  </tr>
+<tr>
+<td>L</td>
+    <td>LSP [6]</td>
+    <td>Liskov substitution principle
+“objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.” See also design by contract.</td>
+  </tr>
+<tr>
+<td>I</td>
+    <td>ISP [7]</td>
+    <td>Interface segregation principle
+“many client-specific interfaces are better than one general-purpose interface.”[8]</td>
+  </tr>
+<tr>
+<td>D</td>
+    <td>DIP [9]</td>
+    <td>Dependency inversion principle
+one should “Depend upon Abstractions. Do not depend upon concretions.”[8]
+Dependency injection is one method of following this principle.</td>
+  </tr>
+</table><p>DRY (Don’t Repeat Yourself)</p>
+
+<p>If you do something more than once, consider writing a function.</p>
+
+<h1>
+<a name="programming-ontology" class="anchor" href="#programming-ontology"><span class="octicon octicon-link"></span></a>Programming Ontology</h1>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/internetErik">internetErik</a></p>
