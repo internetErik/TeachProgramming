@@ -99,7 +99,7 @@ Here are some different levels of a system programmers might interact with
 
 * Memory: data we put in local variable are manipulating direcly in our program.  This is the most essential layer for programming.
 
-    * var x = 2; x = x * 2; console.log(x);
+    * ```var x = 2; x = x * 2; console.log(x);```
 
 * Network (we can put and get values from the network)
 
@@ -120,7 +120,7 @@ Here are some different levels of a system programmers might interact with
 * User (we can prompt user for input)
 
 *e.g.*:
-
+```javascript
 var x = 12;
 
 console.log(x);
@@ -134,6 +134,7 @@ console.log(x);
 var x = [1,2,3];
 
 console.log(x[0]);
+```
 
 ## Simple Data Manipulation
 
