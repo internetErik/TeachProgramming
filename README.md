@@ -231,5 +231,22 @@ DRY (Don’t Repeat Yourself)
 
 If you do something more than once, consider writing a function.
 
-#Programming Ontology
+# Elements of Programming (Ontology)
 
+This section is rather philosophical, but perhaps most fruitful for educators.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.
+
+## Layer (this term may not be the most suitable)
+
+*A layer is basically anything that you can put some value into, or get some value out of.*
+
+Programming languages abstract allow for a single interface for a diverse system that must be thought of as partly physical and partly conceptual.  Developers almost always implement their own conceptual layers of the system in the way that their program is architechted.
+
+	var x = {}; //stores in local 'memory'/context layer
+	
+	x.method = function(){}; //this is a conceptual layer we are making on our object
+	
+	$http.post('www.example.com/v1/restapi'); //puts to the network
+	
+	db.table.save({data: "data"}); //puts to the database network interface layer
+
+Frequently new programmers don't understand the nature of the conceptual systems they are interfacing with, and how these in turn interface with other systems and ultimately with hardware.  While it isn't necessary to understand everything that is going on, it will help to teach the developer to think in terms of parts of a system operating with each other.
