@@ -297,7 +297,27 @@ Dependency injection is one method of following this principle.</td>
 <p>If you do something more than once, consider writing a function.</p>
 
 <h1>
-<a name="programming-ontology" class="anchor" href="#programming-ontology"><span class="octicon octicon-link"></span></a>Programming Ontology</h1>
+<a name="elements-of-programming-ontology" class="anchor" href="#elements-of-programming-ontology"><span class="octicon octicon-link"></span></a>Elements of Programming (Ontology)</h1>
+
+<p>This section is rather philosophical, but perhaps most fruitful for educators.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.</p>
+
+<h2>
+<a name="layer-this-term-may-not-be-the-most-suitable" class="anchor" href="#layer-this-term-may-not-be-the-most-suitable"><span class="octicon octicon-link"></span></a>Layer (this term may not be the most suitable)</h2>
+
+<p><em>A layer is basically anything that you can put some value into, or get some value out of.</em></p>
+
+<p>Programming languages abstract allow for a single interface for a diverse system that must be thought of as partly physical and partly conceptual.  Developers almost always implement their own conceptual layers of the system in the way that their program is architechted.</p>
+
+<pre><code>var x = {}; //stores in local 'memory'/context layer
+
+x.method = function(){}; //this is a conceptual layer we are making on our object
+
+$http.post('www.example.com/v1/restapi'); //puts to the network
+
+db.table.save({data: "data"}); //puts to the database network interface layer
+</code></pre>
+
+<p>Frequently new programmers don't understand the nature of the conceptual systems they are interfacing with, and how these in turn interface with other systems and ultimately with hardware.  While it isn't necessary to understand everything that is going on, it will help to teach the developer to think in terms of parts of a system operating with each other.</p>
         </section>
 
         <footer>
