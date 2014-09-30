@@ -14,22 +14,26 @@ I belive in a direct person-to-person involvement in education; I don’t think 
 
 The following stages are intended to be repeated multiple times, and require the guidance of someone who is already familiar with the technology you are trying to learn.  Therefore, this document is for those who want to teach as much (if not more) than those who want to learn.  Both teacher and student should be familiar with this document so that all parties understand the process involved.
 
-# Environment Setup
+# Work for the Teacher
 
-This sucks.  Fortunately it isn’t so hard with Javascript, since you already have a browser.
-
-# Analysis of Technology
+## Analysis of Technology
 
 This will require some homework for the teacher.  The idea is to evaluate the technologies you will be teaching so you can fit the different components to the following sections.  
 
 I'm going to talk about this more in depth in the section titles Programming Ontology
 
 
-# Analysis of the Student
+## Analysis of the Student
 
 Discover how much the student already know?
 
-# Vocabulary Study
+# Work for the Student
+
+## Environment Setup
+
+This sucks.  Fortunately it isn’t so hard with Javascript, since you already have a browser.
+
+## Vocabulary Study
 
 Suggest that the student learning vocabulary involved in the technologies they want to learn.  Reading articles, watching tutorials and looking at questions/answers (on stackoverflow), even with little comprehension can help provide a realistic view of ignorance on a subject, and help with encountering new terms.
 
@@ -39,7 +43,7 @@ Suggest that the student learning vocabulary involved in the technologies they w
 
 * [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary)
 
-# Iterate Over These Following Steps:
+## Iterate Over These Following Steps:
 
 * Try emphasizing a type on each iteration. 
 
@@ -77,7 +81,7 @@ Suggest that the student learning vocabulary involved in the technologies they w
 
     * Work with built in features
 
-## Types (Conceptually)
+### Types (Conceptually)
 
 Text (String, char)
 
@@ -91,7 +95,7 @@ Lists (Array)
 
 Generic (Object)
 
-## Putting and Getting Values
+### Putting and Getting Values
 
 A level/layer/part of a software system is defined by a programming interface for putting and getting values.  
 
@@ -136,7 +140,7 @@ var x = [1,2,3];
 console.log(x[0]);
 ```
 
-## Simple Data Manipulation
+### Simple Data Manipulation
 
 +, -, /, *, %  
 
@@ -146,7 +150,7 @@ console.log(x[0]);
 
 ++x, x++, +=
 
-## Control of Program Flow
+### Control of Program Flow
 
 if
 
@@ -162,7 +166,7 @@ do...while
 
 switch
 
-## Common Tasks
+### Common Tasks
 
 * Find text in a string
 
@@ -170,19 +174,19 @@ switch
 
 * Traverse an array (in order to find something)
 
-## Extra: Built In Features For Types / API Features
+### Extra: Built In Features For Types / API Features
 
 *e.g.*, array.prototype functions
 
-## Extra Extra: Patterns for Common Tasks
+### Extra Extra: Patterns for Common Tasks
 
 *e.g.*, Closure, module pattern
 
-# Advanced
+## Advanced Topics
 
 These topics don’t need to be covered until the student has relative autonomy.
 
-## Software Design Principles
+### Software Design Principles
 
 SOLID
 
@@ -233,13 +237,21 @@ If you do something more than once, consider writing a function.
 
 # Elements of Programming (Ontology)
 
-This section is rather philosophical, but perhaps most fruitful for educators.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.
+This section is rather philosophical, but perhaps most fruitful for teachers.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.
 
 ## Layer (this term may not be the most suitable)
 
 *A layer is basically anything that you can put some value into, or get some value out of.*
 
-Programming languages abstract allow for a single interface for a diverse system that must be thought of as partly physical and partly conceptual.  Developers almost always implement their own conceptual layers of the system in the way that their program is architechted.
+### Overview
+
+Programming languages abstract many different systems into a single interface.  Software developers most typically work with conceptual layers (objects, classes, &c), however, it is also common that one would write code against a system that interfaces with another service or even hardware.
+
+Working with many layers in an application is almost always necessary, and these layers presents different metaphores and terminology.  Often these different systems have conflicting metaphores and produce equivocations on terms if they aren't kept distinct.  Developing an intuitive understanding of different layers of a system and how each are brought to stand in the same environment can be very helpful for overcoming a lot of confusion on the part of the student.
+
+New developers can help themselves by understanding that they will need to take these different metaphores and potentially wresle them into a common metaphore.  A good example of how systems are made to work together is given with a *nix command prompt.  When running commands together with pipes (`|`), every command passes its results to the next command as text.  In this way there is a consistant expectation for what every console application can work with.
+
+### Examples of Layers
 
 	var x = {}; //stores in local 'memory'/context layer
 	
