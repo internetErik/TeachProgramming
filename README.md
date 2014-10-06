@@ -12,7 +12,7 @@ Unfortunately, I can’t develop a new programming language, but I do have an in
 
 I belive in a direct person-to-person involvement in education; I don’t think we should be indifferent to people’s failures in learning, since a failure in these matters often makes it harder to make another attempt.  We should not leave those who want to learn stranded.
 
-The following stages are intended to be repeated multiple times, and require the guidance of someone who is already familiar with the technology you are trying to learn.  Therefore, this document is for those who want to teach as much (if not more) than those who want to learn.  Both teacher and student should be familiar with this document so that all parties understand the process involved.
+**This document is not intended to help teach programming vocationally.**  Rather, the goal is to provide a more theoretical approach to programming that will help new programmers be prepared to handle more vocational or theoretical tasks.  To this end, I expect that a teacher develop and instruct a powerful way of understanding the organization of programming itself as well as the rote training and repetition necessary to habituate oneself to the potential and syntax of a language.
 
 # Work for the Teacher
 
