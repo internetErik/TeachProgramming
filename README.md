@@ -237,7 +237,11 @@ If you do something more than once, consider writing a function.
 
 # Elements of Programming (Ontology)
 
-This section is rather philosophical, but perhaps most fruitful for teachers.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.
+*Programming languages give us a more powerful way of thinking (that is, a way more suited to our own cognitive capacity).*
+
+Everything in programming ultimately evaluates to physical laws playing out on hardware.  Assembly languages provide an abstraction from the physical laws that programmers have access to, and higher level languages abstract from assembly into new conceptual schemes that allow for more natural thought processes around certain problem domains.
+
+In this section on Ontology, I will be developing a model for the sorts of things that are abstracted from in a system.  This should be helpful not only in breaking down and anticipating what programming languages provide, but also what conventional programming patterns are doing.
 
 ## Layer (this term may not be the most suitable)
 
@@ -245,11 +249,9 @@ This section is rather philosophical, but perhaps most fruitful for teachers.  I
 
 ### Overview
 
-Programming languages abstract many different systems into a single interface.  Software developers most typically work with conceptual layers (objects, classes, &c), however, it is also common that one would write code against a system that interfaces with another service or even hardware.
+Working with many layers in an application is almost always necessary, and these layers presents different metaphores and terminology.  Often these different systems have conflicting metaphores and produce equivocations on terms if they are not kept distinct.  Developing an intuitive understanding of different layers of a system and how each are brought to stand in the same environment can be very helpful for overcoming a lot of confusion on the part of the student.
 
-Working with many layers in an application is almost always necessary, and these layers presents different metaphores and terminology.  Often these different systems have conflicting metaphores and produce equivocations on terms if they aren't kept distinct.  Developing an intuitive understanding of different layers of a system and how each are brought to stand in the same environment can be very helpful for overcoming a lot of confusion on the part of the student.
-
-New developers can help themselves by understanding that they will need to take these different metaphores and potentially wresle them into a common metaphore.  A good example of how systems are made to work together is given with a *nix command prompt.  When running commands together with pipes (`|`), every command passes its results to the next command as text.  In this way there is a consistant expectation for what every console application can work with.
+New developers can help themselves by understanding that they will need to take these different metaphores and potentially wresle them into a common metaphore.  This can help developers once they are advanced in developing a consistant metaphore for their own applications.  A good example of how systems are made to work together is given with a *nix command prompt.  When running commands together with pipes (`|`), every command passes its results to the next command as text.  In this way there is a consistant expectation for what every console application can work with.
 
 ### Examples of Layers
 
