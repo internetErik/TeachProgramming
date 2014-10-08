@@ -8,11 +8,11 @@ Using Javascript as an Example
 
 Learning to code is hard and it shouldn’t be.  *I agree with Bret Victor that this is in great part due to programming languages being poorly designed.  Ease of learning should be a core design consideration in creation of programming languages, and programmer should stop finding it acceptable for things to be otherwise. (Read more about this here: [http://worrydream.com/LearnableProgramming/](http://worrydream.com/LearnableProgramming/) )*
 
-Unfortunately, I can’t develop a new programming language, but I do have an interest immediately in helping those who are interested in programming learn.  
+While I am not pursuing the goal of developing a new programming language and environment (even hardware) for it, I am interested in collaborating with others who would teach others programming so we can try to use techniques that overcome some of the difficulties with our programming languages, and would at the same time be applicable to languages that overcame many of these challenges.
 
-I belive in a direct person-to-person involvement in education; I don’t think we should be indifferent to people’s failures in learning, since a failure in these matters often makes it harder to make another attempt.  We should not leave those who want to learn stranded.
+I belive in a direct person-to-person involvement in education.  As teachers we should feel a great burden of responsibility: we cannot afford to be indifferent to people’s failures, since these failures can make it harder to try again.  We should not leave those who want to learn stranded.
 
-**This document is not intended to help teach programming vocationally.**  Rather, the goal is to provide a more theoretical approach to programming that will help new programmers be prepared to handle more vocational or theoretical tasks.  To this end, I expect that a teacher develop and instruct a powerful way of understanding the organization of programming itself as well as the rote training and repetition necessary to habituate oneself to the potential and syntax of a language.
+**This document is not intended to help teach vocational programming .**  It is also not opposed to vocational programming.  The goal **is** to provide a more systematic approach to *thinking about* programming that will help new programmers be prepared to handle either vocational or theoretical tasks.  To this end, teachers will work to  develop and instruct powerful ways of understanding the organization of programming itself.  Some rote training and repetition is still necessary to make these ways of thinking help fluency with systems of existing tools.
 
 # Work for the Teacher
 
