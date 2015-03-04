@@ -8,11 +8,11 @@ Using Javascript as an Example
 
 Learning to code is hard and it shouldn’t be.  *I agree with Bret Victor that this is in great part due to programming languages being poorly designed.  Ease of learning should be a core design consideration in creation of programming languages, and programmer should stop finding it acceptable for things to be otherwise. (Read more about this here: [http://worrydream.com/LearnableProgramming/](http://worrydream.com/LearnableProgramming/) )*
 
-Unfortunately, I'm not introducing a new programming system, but I do have an interest immediately in helping those who are interested in programming.  
+While I am not pursuing the goal of developing a new programming language and environment (even hardware) for it, I am interested in collaborating with others who would teach others programming so we can try to use techniques that overcome some of the difficulties with our programming languages, and would at the same time be applicable to languages that overcame many of these challenges.
 
-I belive in a direct person-to-person involvement in education; I don’t think we should be indifferent to people’s failures in learning, since a failure in these matters often makes it harder to make another attempt.  We should not leave those who want to learn stranded.
+I belive in a direct person-to-person involvement in education.  As teachers we should feel a great burden of responsibility: we cannot afford to be indifferent to people’s failures, since these failures can make it harder to try again.  We should not leave those who want to learn stranded.
 
-The following stages are intended to be repeated multiple times, and require the guidance of someone who is already familiar with the technology you are trying to learn.  Therefore, this document is for those who want to teach as much (if not more) than those who want to learn.  Both teacher and student should be familiar with this document so that all parties understand the process involved.
+**This document is not intended to help teach vocational programming .**  It is also not opposed to vocational programming.  The goal **is** to provide a more systematic approach to *thinking about* programming that will help new programmers be prepared to handle either vocational or theoretical tasks.  To this end, teachers will work to  develop and instruct powerful ways of understanding the organization of programming itself.  Some rote training and repetition is still necessary to make these ways of thinking help fluency with systems of existing tools.
 
 # Work for the Teacher
 
@@ -271,7 +271,11 @@ If you do something more than once, consider writing a function.
 
 # Elements of Programming (Ontology)
 
-This section is rather philosophical, but perhaps most fruitful for teachers.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.
+*Programming languages give us a more powerful way of thinking (that is, a way more suited to our own cognitive capacity).*
+
+Everything in programming ultimately evaluates to physical laws playing out on hardware.  Assembly languages provide an abstraction from the physical laws that programmers have access to, and higher level languages abstract from assembly into new conceptual schemes that allow for more natural thought processes around certain problem domains.
+
+In this section on Ontology, I will be developing a model for the sorts of things that are abstracted from in a system.  This should be helpful not only in breaking down and anticipating what programming languages provide, but also what conventional programming patterns are doing.
 
 ## Layer (this term may not be the most suitable)
 
@@ -279,11 +283,9 @@ This section is rather philosophical, but perhaps most fruitful for teachers.  I
 
 ### Overview
 
-Programming languages abstract many different systems into a single interface.  Software developers most typically work with conceptual layers (objects, classes, &c), however, it is also common that one would write code against a system that interfaces with another service or even hardware.
+Working with many layers in an application is almost always necessary, and these layers presents different metaphores and terminology.  Often these different systems have conflicting metaphores and produce equivocations on terms if they are not kept distinct.  Developing an intuitive understanding of different layers of a system and how each are brought to stand in the same environment can be very helpful for overcoming a lot of confusion on the part of the student.
 
-Working with many layers in an application is almost always necessary, and these layers presents different metaphores and terminology.  Often these different systems have conflicting metaphores and produce equivocations on terms if they aren't kept distinct.  Developing an intuitive understanding of different layers of a system and how each are brought to stand in the same environment can be very helpful for overcoming a lot of confusion on the part of the student.
-
-New developers can help themselves by understanding that they will need to take these different metaphores and potentially wresle them into a common metaphore.  A good example of how systems are made to work together is given with a *nix command prompt.  When running commands together with pipes (`|`), every command passes its results to the next command as text.  In this way there is a consistant expectation for what every console application can work with.
+New developers can help themselves by understanding that they will need to take these different metaphores and potentially wresle them into a common metaphore.  This can help developers once they are advanced in developing a consistant metaphore for their own applications.  A good example of how systems are made to work together is given with a *nix command prompt.  When running commands together with pipes (`|`), every command passes its results to the next command as text.  In this way there is a consistant expectation for what every console application can work with.
 
 ### Examples of Layers
 
