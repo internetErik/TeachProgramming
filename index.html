@@ -32,14 +32,14 @@
 
         <section id="main_content">
           <h1>
-<a name="teaching-programming" class="anchor" href="#teaching-programming"><span class="octicon octicon-link"></span></a>Teaching Programming</h1>
+<a id="teaching-programming" class="anchor" href="#teaching-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Teaching Programming</h1>
 
 <p>Using Javascript as an Example</p>
 
 <p><strong>This is not for students to work with directly, but for those interested in instruction.</strong></p>
 
 <h1>
-<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h1>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
 
 <p>Learning to code is hard and it shouldn’t be.  <em>I agree with Bret Victor that this is in great part due to programming languages being poorly designed.  Ease of learning should be a core design consideration in creation of programming languages, and programmer should stop finding it acceptable for things to be otherwise. (Read more about this here: <a href="http://worrydream.com/LearnableProgramming/">http://worrydream.com/LearnableProgramming/</a> )</em></p>
 
@@ -50,24 +50,24 @@
 <p>The following stages are intended to be repeated multiple times, and require the guidance of someone who is already familiar with the technology you are trying to learn.  Therefore, this document is for those who want to teach as much (if not more) than those who want to learn.  Both teacher and student should be familiar with this document so that all parties understand the process involved.</p>
 
 <h1>
-<a name="environment-setup" class="anchor" href="#environment-setup"><span class="octicon octicon-link"></span></a>Environment Setup</h1>
+<a id="environment-setup" class="anchor" href="#environment-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment Setup</h1>
 
 <p>This sucks.  Fortunately it isn’t so hard with Javascript, since you already have a browser.</p>
 
 <h1>
-<a name="analysis-of-technology" class="anchor" href="#analysis-of-technology"><span class="octicon octicon-link"></span></a>Analysis of Technology</h1>
+<a id="analysis-of-technology" class="anchor" href="#analysis-of-technology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis of Technology</h1>
 
 <p>This will require some homework for the teacher.  The idea is to evaluate the technologies you will be teaching so you can fit the different components to the following sections.  </p>
 
 <p>I'm going to talk about this more in depth in the section titles Programming Ontology</p>
 
 <h1>
-<a name="analysis-of-the-student" class="anchor" href="#analysis-of-the-student"><span class="octicon octicon-link"></span></a>Analysis of the Student</h1>
+<a id="analysis-of-the-student" class="anchor" href="#analysis-of-the-student" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis of the Student</h1>
 
 <p>Discover how much the student already know?</p>
 
 <h1>
-<a name="vocabulary-study" class="anchor" href="#vocabulary-study"><span class="octicon octicon-link"></span></a>Vocabulary Study</h1>
+<a id="vocabulary-study" class="anchor" href="#vocabulary-study" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocabulary Study</h1>
 
 <p>Suggest that the student learning vocabulary involved in the technologies they want to learn.  Reading articles, watching tutorials and looking at questions/answers (on stackoverflow), even with little comprehension can help provide a realistic view of ignorance on a subject, and help with encountering new terms.</p>
 
@@ -76,8 +76,10 @@
 <ul>
 <li><p><a href="http://www.codecademy.com/glossary/javascript">http://www.codecademy.com/glossary/javascript</a></p></li>
 <li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary">https://developer.mozilla.org/en-US/docs/Glossary</a></p></li>
-</ul><h1>
-<a name="iterate-over-these-following-steps" class="anchor" href="#iterate-over-these-following-steps"><span class="octicon octicon-link"></span></a>Iterate Over These Following Steps:</h1>
+</ul>
+
+<h1>
+<a id="iterate-over-these-following-steps" class="anchor" href="#iterate-over-these-following-steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterate Over These Following Steps:</h1>
 
 <ul>
 <li>
@@ -133,8 +135,10 @@
 <li>Work with built in features</li>
 </ul>
 </li>
-</ul><h2>
-<a name="types-conceptually" class="anchor" href="#types-conceptually"><span class="octicon octicon-link"></span></a>Types (Conceptually)</h2>
+</ul>
+
+<h2>
+<a id="types-conceptually" class="anchor" href="#types-conceptually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Types (Conceptually)</h2>
 
 <p>Text (String, char)</p>
 
@@ -149,7 +153,7 @@
 <p>Generic (Object)</p>
 
 <h2>
-<a name="putting-and-getting-values" class="anchor" href="#putting-and-getting-values"><span class="octicon octicon-link"></span></a>Putting and Getting Values</h2>
+<a id="putting-and-getting-values" class="anchor" href="#putting-and-getting-values" aria-hidden="true"><span class="octicon octicon-link"></span></a>Putting and Getting Values</h2>
 
 <p>A level/layer/part of a software system is defined by a programming interface for putting and getting values.  </p>
 
@@ -182,25 +186,26 @@
 </ul>
 </li>
 <li><p>User (we can prompt user for input)</p></li>
-</ul><p><em>e.g.</em>:</p>
+</ul>
 
-<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<p><em>e.g.</em>:</p>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> x <span class="pl-k">=</span> <span class="pl-c1">12</span>;
 
-<span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+<span class="pl-en">console</span><span class="pl-s3">.log</span>(x);
 
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+(<span class="pl-st">function</span>(<span class="pl-vpf">x</span>) {
 
-<span class="p">})(</span><span class="mi">12</span><span class="p">);</span>
+    <span class="pl-en">console</span><span class="pl-s3">.log</span>(x);
 
-<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">];</span>
+})(<span class="pl-c1">12</span>);
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-</pre></div>
+<span class="pl-s">var</span> x <span class="pl-k">=</span> [<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>];
+
+<span class="pl-en">console</span><span class="pl-s3">.log</span>(x[<span class="pl-c1">0</span>]);</pre></div>
 
 <h2>
-<a name="simple-data-manipulation" class="anchor" href="#simple-data-manipulation"><span class="octicon octicon-link"></span></a>Simple Data Manipulation</h2>
+<a id="simple-data-manipulation" class="anchor" href="#simple-data-manipulation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Data Manipulation</h2>
 
 <p>+, -, /, *, %  </p>
 
@@ -211,7 +216,7 @@
 <p>++x, x++, +=</p>
 
 <h2>
-<a name="control-of-program-flow" class="anchor" href="#control-of-program-flow"><span class="octicon octicon-link"></span></a>Control of Program Flow</h2>
+<a id="control-of-program-flow" class="anchor" href="#control-of-program-flow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Control of Program Flow</h2>
 
 <p>if</p>
 
@@ -228,81 +233,85 @@
 <p>switch</p>
 
 <h2>
-<a name="common-tasks" class="anchor" href="#common-tasks"><span class="octicon octicon-link"></span></a>Common Tasks</h2>
+<a id="common-tasks" class="anchor" href="#common-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Common Tasks</h2>
 
 <ul>
 <li><p>Find text in a string</p></li>
 <li><p>Evaluate a mathematical expression</p></li>
 <li><p>Traverse an array (in order to find something)</p></li>
-</ul><h2>
-<a name="extra-built-in-features-for-types--api-features" class="anchor" href="#extra-built-in-features-for-types--api-features"><span class="octicon octicon-link"></span></a>Extra: Built In Features For Types / API Features</h2>
+</ul>
+
+<h2>
+<a id="extra-built-in-features-for-types--api-features" class="anchor" href="#extra-built-in-features-for-types--api-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra: Built In Features For Types / API Features</h2>
 
 <p><em>e.g.</em>, array.prototype functions</p>
 
 <h2>
-<a name="extra-extra-patterns-for-common-tasks" class="anchor" href="#extra-extra-patterns-for-common-tasks"><span class="octicon octicon-link"></span></a>Extra Extra: Patterns for Common Tasks</h2>
+<a id="extra-extra-patterns-for-common-tasks" class="anchor" href="#extra-extra-patterns-for-common-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Extra: Patterns for Common Tasks</h2>
 
 <p><em>e.g.</em>, Closure, module pattern</p>
 
 <h1>
-<a name="advanced" class="anchor" href="#advanced"><span class="octicon octicon-link"></span></a>Advanced</h1>
+<a id="advanced" class="anchor" href="#advanced" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced</h1>
 
 <p>These topics don’t need to be covered until the student has relative autonomy.</p>
 
 <h2>
-<a name="software-design-principles" class="anchor" href="#software-design-principles"><span class="octicon octicon-link"></span></a>Software Design Principles</h2>
+<a id="software-design-principles" class="anchor" href="#software-design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software Design Principles</h2>
 
 <p>SOLID</p>
 
 <table>
-<tr>
-<td>Initial</td>
+  <tr>
+    <td>Initial</td>
     <td>Stands for
 (acronym)</td>
     <td>Concept</td>
   </tr>
-<tr>
-<td>S</td>
+  <tr>
+    <td>S</td>
     <td>SRP [4]</td>
     <td>Single responsibility principle
 a class should have only a single responsibility (i.e. only one potential change in the software's specification should be able to affect the specification of the class)</td>
   </tr>
-<tr>
-<td>O</td>
+  <tr>
+    <td>O</td>
     <td>OCP [5]</td>
     <td>Open/closed principle
 "software entities … should be open for extension, but closed for modification."</td>
   </tr>
-<tr>
-<td>L</td>
+  <tr>
+    <td>L</td>
     <td>LSP [6]</td>
     <td>Liskov substitution principle
 “objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.” See also design by contract.</td>
   </tr>
-<tr>
-<td>I</td>
+  <tr>
+    <td>I</td>
     <td>ISP [7]</td>
     <td>Interface segregation principle
 “many client-specific interfaces are better than one general-purpose interface.”[8]</td>
   </tr>
-<tr>
-<td>D</td>
+  <tr>
+    <td>D</td>
     <td>DIP [9]</td>
     <td>Dependency inversion principle
 one should “Depend upon Abstractions. Do not depend upon concretions.”[8]
 Dependency injection is one method of following this principle.</td>
   </tr>
-</table><p>DRY (Don’t Repeat Yourself)</p>
+</table>
+
+<p>DRY (Don’t Repeat Yourself)</p>
 
 <p>If you do something more than once, consider writing a function.</p>
 
 <h1>
-<a name="elements-of-programming-ontology" class="anchor" href="#elements-of-programming-ontology"><span class="octicon octicon-link"></span></a>Elements of Programming (Ontology)</h1>
+<a id="elements-of-programming-ontology" class="anchor" href="#elements-of-programming-ontology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elements of Programming (Ontology)</h1>
 
 <p>This section is rather philosophical, but perhaps most fruitful for educators.  I should provide a warrant for this section, but I think that after investing some time in it the importance will show itself.</p>
 
 <h2>
-<a name="layer-this-term-may-not-be-the-most-suitable" class="anchor" href="#layer-this-term-may-not-be-the-most-suitable"><span class="octicon octicon-link"></span></a>Layer (this term may not be the most suitable)</h2>
+<a id="layer-this-term-may-not-be-the-most-suitable" class="anchor" href="#layer-this-term-may-not-be-the-most-suitable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Layer (this term may not be the most suitable)</h2>
 
 <p><em>A layer is basically anything that you can put some value into, or get some value out of.</em></p>
 
