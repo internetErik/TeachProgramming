@@ -8,7 +8,7 @@ Using Javascript as an Example
 
 Learning to code is hard and it shouldn’t be.  *I agree with Bret Victor that this is in great part due to programming languages being poorly designed.  Ease of learning should be a core design consideration in creation of programming languages, and programmer should stop finding it acceptable for things to be otherwise. (Read more about this here: [http://worrydream.com/LearnableProgramming/](http://worrydream.com/LearnableProgramming/) )*
 
-Unfortunately, I can’t develop a new programming language, but I do have an interest immediately in helping those who are interested in programming learn.  
+Unfortunately, I'm not introducing a new programming system, but I do have an interest immediately in helping those who are interested in programming.  
 
 I belive in a direct person-to-person involvement in education; I don’t think we should be indifferent to people’s failures in learning, since a failure in these matters often makes it harder to make another attempt.  We should not leave those who want to learn stranded.
 
@@ -32,6 +32,36 @@ Discover how much the student already know?
 ## Environment Setup
 
 This sucks.  Fortunately it isn’t so hard with Javascript, since you already have a browser.
+
+## Grammar
+
+Before we learn to write we learn to read.  Why is this different with programming?  In English, when we read we proceed from the top of the page to the bottom and from left to right.  (Of course, sometimes footnotes or end notes are used, and this can be an helpful thing for programmers to relate to.)
+
+### Statements and Expressions
+
+### Values, Labels, Operators
+
+### Left Hand and Right Hand
+
+### Functions
+
+### Comments
+
+### Composing Expressions from Other Expressions
+
+### Program Flow, or How to Move from One Line to Another
+
+One can't always assume that the next line of code that will be run is on the following line.
+
+#### `if` Statements
+
+#### `for` and `while` Statements
+
+#### `switch` Statements
+
+### Resources
+
+[You Don't Know JS on Statements](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/ch1.md)
 
 ## Vocabulary Study
 
@@ -178,7 +208,11 @@ switch
 
 *e.g.*, array.prototype functions
 
-### Extra Extra: Patterns for Common Tasks
+### Extra: Grammars from Convention
+
+*e.g.*, fluent
+
+### Extra: Patterns
 
 *e.g.*, Closure, module pattern
 
