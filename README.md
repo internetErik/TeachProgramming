@@ -279,7 +279,9 @@ In this section on Ontology, I will be developing a model for the sorts of thing
 
 ## Layer (this term may not be the most suitable)
 
-*A layer is basically anything that you can put some value into, or get some value out of.*
+*A layer is basically anything that you can put some value into, or get some value out of.  Something with getters and/or setters*
+
+[Erik Meijer - What does it mean to be Reactive?](https://www.youtube.com/watch?v=sTSQlYX5DU0) (This is a great talk that works out getters and setters - both syncronous and asyncronous)
 
 ### Overview
 
