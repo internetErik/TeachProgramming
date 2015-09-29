@@ -8,11 +8,24 @@ Using Javascript as an Example
 
 Learning to code is hard and it shouldn’t be.  *I agree with Bret Victor that this is in great part due to programming languages being poorly designed.  Ease of learning should be a core design consideration in creation of programming languages, and programmer should stop finding it acceptable for things to be otherwise. (Read more about this here: [http://worrydream.com/LearnableProgramming/](http://worrydream.com/LearnableProgramming/) )*
 
-While I am not pursuing the goal of developing a new programming language and environment (even hardware) for it, I am interested in collaborating with others who would teach others programming so we can try to use techniques that overcome some of the difficulties with our programming languages, and would at the same time be applicable to languages that overcame many of these challenges.
+While I am not pursuing the goal of developing a new programming language and environment for it, I am interested in collaborating with others who would teach programming so we can try to use techniques that overcome some of the difficulties teaching programming languages that do exist.
 
 I belive in a direct person-to-person involvement in education.  As teachers we should feel a great burden of responsibility: we cannot afford to be indifferent to people’s failures, since these failures can make it harder to try again.  We should not leave those who want to learn stranded.
 
-**This document is not intended to help teach vocational programming .**  It is also not opposed to vocational programming.  The goal **is** to provide a more systematic approach to *thinking about* programming that will help new programmers be prepared to handle either vocational or theoretical tasks.  To this end, teachers will work to  develop and instruct powerful ways of understanding the organization of programming itself.  Some rote training and repetition is still necessary to make these ways of thinking help fluency with systems of existing tools.
+**This document is not intended to help teach vocational programming.**  It is also not opposed to vocational programming.  The goal **is** to provide a more systematic approach to *thinking about* programming that will help new programmers be prepared to handle either vocational or theoretical tasks.  To this end, teachers will work to  develop and instruct powerful ways of understanding the organization of programming itself.  Some rote training and repetition is still necessary to make these ways of thinking help fluency with systems of existing tools.
+
+**This document is not intended for students to use directly.**  I believe that this document will be more useful as a conversation piece between people who want to help teach programming.
+
+# A Note on Programming and Computer Science
+
+Programming is not Computer Science.  If I am in a mood to be rigorous I don't even think it's good to consider programming to be a part of Computer Science.  
+Computer Science is not well named, and I will now say some paradoxical things about this that are meant to spur thought, and so I will not be misunderstood as trying to legislate the usage of language.  
+
+I think that employing the including 'science' in 'Computer Science' is also incorrect, since I believe Computer Science to be more of an art than a subject that can be placed on a mathematical footing (perhaps I am showing my rigourous definition of science via Kant here).  I also think that using 'computer' in the term 'Computer Science' is limiting so far as we take ourselves to know what a computer is already.
+
+By `Computer Science` I understand the following: The investigation of tools that can be employed to enhance human cognition, and how to adapt these tools to our use.
+
+Currently, computers (as they are commonly understood) are an incredibly powerful and versitile tool that humanity is coming to terms with, and so it is nearly forgivable that the term Computer Science emerged.
 
 # Work for the Teacher
 
@@ -35,7 +48,11 @@ This sucks.  Fortunately it isn’t so hard with Javascript, since you already h
 
 ## Grammar
 
-Before we learn to write we learn to read.  Why is this different with programming?  In English, when we read we proceed from the top of the page to the bottom and from left to right.  (Of course, sometimes footnotes or end notes are used, and this can be an helpful thing for programmers to relate to.)
+Before we learn to write we learn to read.  Why is this different with programming?  Typically in English we read we from the top of the page to the bottom and from left to right.  Reading programming languages are rarely that straight forward easy.  If you've been programming for a while, perhaps your own familiarity with programming languages is a roadblock for you in understanding the difficulties a new programmer may encounter.
+
+To begin with it may be good to start with statements that can be followed in a similar manner to English prose.  Then begin adding statements that may need to be understood inside out (such as calling a function as an argument in a function call).  With functions and other statements that control flow, it will become a question at the end of every line (or even in the middle of lines) where the next line will be.
+
+A student can begin to learn the debugger while using it merely as a tool to read code, and to test their understanding before they step-in to the next statement or advance.  It may be good to provide some programs to debug.
 
 ### Statements and Expressions
 
@@ -218,7 +235,7 @@ switch
 
 ## Advanced Topics
 
-These topics don’t need to be covered until the student has relative autonomy.
+These topics don’t need to be covered until the student has relative autonomy. Much of these topics may be handled casually throughout learning the languages, and now that many of them are (hopefully) intuitive giving a formal list of them could help reflection.
 
 ### Software Design Principles
 
@@ -227,8 +244,7 @@ SOLID
 <table>
   <tr>
     <td>Initial</td>
-    <td>Stands for
-(acronym)</td>
+    <td>Stands for (acronym)</td>
     <td>Concept</td>
   </tr>
   <tr>
