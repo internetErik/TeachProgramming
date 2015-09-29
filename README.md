@@ -21,7 +21,7 @@ I belive in a direct person-to-person involvement in education.  As teachers we 
 Programming is not Computer Science.  If I am in a mood to be rigorous I don't even think it's good to consider programming to be a part of Computer Science.  
 Computer Science is not well named, and I will now say some paradoxical things about this that are meant to spur thought, and so I will not be misunderstood as trying to legislate the usage of language.  
 
-I think that employing the including 'science' in 'Computer Science' is also incorrect, since I believe Computer Science to be more of an art than a subject that can be placed on a mathematical footing (perhaps I am showing my rigourous definition of science via Kant here).  I also think that using 'computer' in the term 'Computer Science' is limiting so far as we take ourselves to know what a computer is already.
+I think that employing the including 'science' in 'Computer Science' is also incorrect, since I believe Computer Science to be more of an art than a subject that can be placed on a mathematical footing (perhaps I am showing my rigorous definition of science via Kant here).  I also think that using 'computer' in the term 'Computer Science' is limiting so far as we take ourselves to know what a computer is already.
 
 By `Computer Science` I understand the following: The investigation of tools that can be employed to enhance human cognition, and how to adapt these tools to our use.
 
