@@ -18,8 +18,8 @@ I belive in a direct person-to-person involvement in education.  As teachers we 
 
 # A Note on Programming and Computer Science
 
-Programming is not Computer Science.  If I am in a mood to be rigorous I don't even think it's good to consider programming to be a part of Computer Science.  
-Computer Science is not well named, and I will now say some paradoxical things about this that are meant to spur thought, and so I will not be misunderstood as trying to legislate the usage of language.  
+Programming is not Computer Science.  If I am in a mood to be rigorous I don't even think it's good to consider programming to be a part of Computer Science.
+Computer Science is not well named, and I will now say some paradoxical things about this that are meant to spur thought, and so I will not be misunderstood as trying to legislate the usage of language.
 
 I think that employing the including 'science' in 'Computer Science' is also incorrect, since I believe Computer Science to be more of an art than a subject that can be placed on a mathematical footing (perhaps I am showing my rigorous definition of science via Kant here).  I also think that using 'computer' in the term 'Computer Science' is limiting so far as we take ourselves to know what a computer is already.
 
@@ -31,7 +31,7 @@ Currently, computers (as they are commonly understood) are an incredibly powerfu
 
 ## Analysis of Technology
 
-This will require some homework for the teacher.  The idea is to evaluate the technologies you will be teaching so you can fit the different components to the following sections.  
+This will require some homework for the teacher.  The idea is to evaluate the technologies you will be teaching so you can fit the different components to the following sections.
 
 I'm going to talk about this more in depth in the section titles Programming Ontology
 
@@ -92,7 +92,7 @@ Suggest that the student learning vocabulary involved in the technologies they w
 
 ## Iterate Over These Following Steps:
 
-* Try emphasizing a type on each iteration. 
+* Try emphasizing a type on each iteration.
 
     * In early iterations start with simple types
 
@@ -144,7 +144,7 @@ Generic (Object)
 
 ### Putting and Getting Values
 
-A level/layer/part of a software system is defined by a programming interface for putting and getting values.  
+A level/layer/part of a software system is defined by a programming interface for putting and getting values.
 
 Here are some different levels of a system programmers might interact with
 
@@ -189,11 +189,11 @@ console.log(x[0]);
 
 ### Simple Data Manipulation
 
-+, -, /, *, %  
++, -, /, *, %
 
 ()
 
-||, && 
+||, &&
 
 ++x, x++, +=
 
@@ -201,7 +201,7 @@ console.log(x[0]);
 
 if
 
-else 
+else
 
 for
 
@@ -308,11 +308,11 @@ New developers can help themselves by understanding that they will need to take 
 ### Examples of Layers
 
 	var x = {}; //stores in local 'memory'/context layer
-	
+
 	x.method = function(){}; //this is a conceptual layer we are making on our object
-	
+
 	$http.post('www.example.com/v1/restapi'); //puts to the network
-	
+
 	db.table.save({data: "data"}); //puts to the database network interface layer
 
 Frequently new programmers don't understand the nature of the conceptual systems they are interfacing with, and how these in turn interface with other systems and ultimately with hardware.  While it isn't necessary to understand everything that is going on, it will help to teach the developer to think in terms of parts of a system operating with each other.
